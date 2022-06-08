@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    /* colours */
+    --red-primary: hsl(0, 100%, 74%);
+    --green-primary: hsl(154, 59%, 51%);
+    --accent-blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249 24% 71%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --shadow: 0 8px 1px hsla(280, 6%, 10%, 0.205);
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: var(--red-primary) url(./images/bg-intro-mobile.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    max-width: 375px;
+    margin: auto;
+}
+
+header{
+    color: white;
+    text-align: center;
+    margin: 2rem;
+}
+
+.paragraph{
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+.trial{
+    background-color: var(--accent-blue);
+    padding: 1rem 4.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    line-height: 2;
+    font-weight: 700;
+    margin: 0 20px 2rem 20px;
+    width: auto;
+}
+
+.trial span{
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    width: 90%;
+    margin: auto;
+}
+
+form input{
+    margin: 20px 20px 10px 20px;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(17, 10, 10, 0.644);
+}
+
+
+form button{
+    margin: 10px 20px 20px 20px;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 5px;
+    padding: 0.5rem;
+    background: var(--green-primary);
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 3px 1px hsl(153, 45%, 37%);
+}
+
+form p{
+    margin: 0 20px 20px 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--grayish-blue);
+}
+
+.tsa{
+    color: var(--red-primary);
+    font-weight: 600;
+}
+
+footer{
+    margin: 20px 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 769px){
+    body{
+        background: url(./images/bg-intro-desktop.png) var(--red-primary);
+    }
+
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header{
+        width: 50%;
+        /* justify-content: center; */
+        align-self: center;
+        text-align: left;
+    }
+
+    .heading{
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+
+    .paragraph{
+        text-align: left;
+        padding: 0 2rem 0 0;
+        line-height: 2;
+    }
+
+    main{
+        width: 70%;
+        margin: 50px;
+    }
+    .trial{
+        margin: 30px;
+    }
+
+    
+}
